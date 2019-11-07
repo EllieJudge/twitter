@@ -1,26 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
+import NavBar from "./Components/NavBar/NavBar";
+import { StickyContainer, Sticky } from "react-sticky";
+import BannerImg from "./Components/BannerImg/BannerImg";
+import StatBar from "./Components/StatBar/StatBar";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+	render() {
+		return (
+			<StickyContainer>
+				<Sticky>{({ style }) => <NavBar style={{ ...style }} />}</Sticky>
+
+				<BannerImg />
+
+				<StatBar />
+
+				<h1 style={{ height: "500px", backgroundColor: "whitesmoke" }}>
+					fdsoavfovhffor
+				</h1>
+				<h1 style={{ height: "500px", backgroundColor: "whitesmoke" }}>
+					fdsoavfovhffor
+				</h1>
+				<h1 style={{ height: "500px", backgroundColor: "whitesmoke" }}>
+					fdsoavfovhffor
+				</h1>
+			</StickyContainer>
+		);
+	}
 }
 
 export default App;
