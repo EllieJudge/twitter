@@ -6,9 +6,9 @@ const useStyles = makeStyles(() => ({
 		display: "flex",
 		justifyContent: "center",
 		alignItems: "center",
-		paddingLeft: "35px",
 		top: "-10px",
-		boxShadow: "0 1px 3px 0 rgba(0,0,0,0.25)"
+		boxShadow: "0 1px 3px 0 rgba(0,0,0,0.25)",
+		height: 60
 	},
 	britneyImg: {
 		height: "200px",
@@ -22,7 +22,15 @@ const useStyles = makeStyles(() => ({
 	statContainer: {
 		color: "#66757F",
 		display: "flex",
-		fontWeight: "bold"
+		fontWeight: "bold",
+		marginLeft: -1,
+	},
+	rightSide: {
+		width: '50%',
+    display: 'flex',
+    justifyContent: 'space-between',
+		// backgroundColor: 'beige',
+		marginLeft: 140,
 	}
 }));
 

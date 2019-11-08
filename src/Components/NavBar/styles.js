@@ -46,12 +46,6 @@ const useStyles = makeStyles(theme => ({
 		marginLeft: "10px",
 		marginRight: "5px"
 	},
-	momentsImg: {
-		height: "25px",
-		width: "25px",
-		marginLeft: "20px",
-		marginRight: "5px"
-	},
 	search: {
 		display: "flex",
 		justifyContent: "flex-end",
@@ -100,7 +94,8 @@ const useStyles = makeStyles(theme => ({
 		fontSize: "13px",
 		fontWeight: "bold",
 		display: "flex",
-		alignItems: "center"
+		alignItems: "center",
+		marginLeft: "25px"
 	}
 }));
 

@@ -4,6 +4,9 @@ import NavBar from "./Components/NavBar/NavBar";
 import { StickyContainer, Sticky } from "react-sticky";
 import BannerImg from "./Components/BannerImg/BannerImg";
 import StatBar from "./Components/StatBar/StatBar";
+// import LeftProfileCard from './Components/LeftProfileCard/LeftProfileCard';
+import Grid from './Components/Grid/Grid';
+
 
 class App extends Component {
 	render() {
@@ -15,15 +18,12 @@ class App extends Component {
 
 				<StatBar />
 
-				<h1 style={{ height: "500px", backgroundColor: "whitesmoke" }}>
-					fdsoavfovhffor
-				</h1>
-				<h1 style={{ height: "500px", backgroundColor: "whitesmoke" }}>
-					fdsoavfovhffor
-				</h1>
-				<h1 style={{ height: "500px", backgroundColor: "whitesmoke" }}>
-					fdsoavfovhffor
-				</h1>
+				{/* <LeftProfileCard /> */}
+
+
+			<Grid />
+			
+<h1>hfoiaghfipghfioghigheg</h1>
 			</StickyContainer>
 		);
 	}

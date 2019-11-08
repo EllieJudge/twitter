@@ -4,8 +4,8 @@ import statStyles from "./styles";
 function Stat(props) {
 	return (
 		<div style={statStyles}>
-			<div>{props.title}</div>
-			<div style={{ color: "#D44A71", fontSize: "18px" }}>{props.value}{props.suffix}</div>
+			<div>{props.title}</div> 
+			<div style={{ color: props.color, fontSize: "18px" }}>{props.value}{props.suffix}</div>
 		</div>
 	);
 }

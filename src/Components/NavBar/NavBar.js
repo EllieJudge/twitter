@@ -1,11 +1,6 @@
 import React from "react";
-import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
-import Typography from "@material-ui/core/Typography";
-import TwitterIcon from "@material-ui/icons/Twitter";
-import SearchIcon from "@material-ui/icons/Search";
-import InputBase from "@material-ui/core/InputBase";
-import ArrowDropDownSharpIcon from "@material-ui/icons/ArrowDropDownSharp";
+import { AppBar, Toolbar, Typography, InputBase } from "@material-ui/core";
+import { Twitter, Search, ArrowDropDownSharp } from "@material-ui/icons";
 import useStyles from "./styles";
 const logo = require("../../assets/twitterLightning.png");
 
@@ -18,7 +13,7 @@ export default function DenseAppBar() {
 				<Toolbar variant="dense">
 					<div className={classes.leftSide}>
 						<Typography className={classes.tessssst}>
-							<TwitterIcon className={classes.twitterIcon} />
+							<Twitter className={classes.twitterIcon} />
 							Home
 						</Typography>
 
@@ -40,7 +35,7 @@ export default function DenseAppBar() {
 								inputProps={{ "aria-label": "search" }}
 							/>
 							<div className={classes.searchIcon}>
-								<SearchIcon />
+								<Search />
 							</div>
 						</div>
 						<a href className={classes.aTag}>
@@ -49,7 +44,7 @@ export default function DenseAppBar() {
 						<a href className={classes.aTag2}>
 							Log in.{" "}
 						</a>
-						<ArrowDropDownSharpIcon className={classes.arrow} />
+						<ArrowDropDownSharp className={classes.arrow} />
 						<div className={classes.emptyDiv}></div>
 					</div>
 				</Toolbar>
