@@ -18,13 +18,11 @@ const useStyles = makeStyles(() => ({
 	},
 	cardContainer: {
 		backgroundColor: "lightblue",
-		width: "60%",
 		display: "flex",
 		flexDirection: "column",
-		justifyContent: "center",
 		alignItems: "center",
-    paddingTop: "20px",
-    paddingBottom: "20px"
+		height: "50%",
+		marginBottom: "10px"
 	}
 }));
 

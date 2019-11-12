@@ -3,7 +3,7 @@ import Button from "@material-ui/core/Button";
 import useStyles from "./styles";
 
 
-function FollowButt() {
+function FollowBtn() {
 	const classes = useStyles();
 	return (
 		<Button variant="outlined" color="secondary" 
@@ -13,4 +13,4 @@ function FollowButt() {
 	);
 }
 
-export default FollowButt;
+export default FollowBtn;

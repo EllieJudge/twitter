@@ -1,14 +1,12 @@
-import React, { Fragment } from "react";
+import React from "react";
 import Buttons from "../Buttons/Buttons";
 import useStyles from "./styles";
 import { Paper } from "@material-ui/core";
 
-function LogInSignUpCard(props) {
+function LogInSignUpCard() {
 	const classes = useStyles();
 	return (
-		<Fragment>
-			<Paper style={{ display: "flex", justifyContent: "center" }}>
-				<div className={classes.cardContainer}>
+				<Paper className={classes.cardContainer}>
 					<img
 						src="https://abs.twimg.com/a/1572632388/img/delight/delight_prompt_3.png"
 						alt="stockPhoto"
@@ -29,12 +27,9 @@ function LogInSignUpCard(props) {
 
 					<Buttons
 						buttonName="Sign Up"
-						backgroundColor="blue"
 						color="#B94B6F"
 					></Buttons>
-				</div>
-			</Paper>
-		</Fragment>
+				</Paper>
 	);
 }
 

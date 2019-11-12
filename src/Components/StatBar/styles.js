@@ -26,11 +26,10 @@ const useStyles = makeStyles(() => ({
 		marginLeft: -1,
 	},
 	rightSide: {
-		width: '50%',
+		width: '100%',
     display: 'flex',
-    justifyContent: 'space-between',
-		// backgroundColor: 'beige',
-		marginLeft: 140,
+    justifyContent: 'space-evenly',
+		marginLeft: 165,
 	}
 }));
 

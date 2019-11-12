@@ -2,7 +2,7 @@ import Toolbar from "@material-ui/core/Toolbar";
 import React, { Fragment } from "react";
 import Stat from "./Stat/Stat";
 import useStyles from "./styles";
-import FollowButt from "./FollowButt/FollowButt";
+import FollowBtn from "./FollowBtn/FollowBtn";
 const britney = require("../../assets/circle-cropped.png");
 
 function StatBar() {
@@ -37,8 +37,9 @@ function StatBar() {
 
 						<Stat title="Lists" value={Math.floor(Math.random() * 100)} />
 					</div>
+	
+						<FollowBtn />
 
-					<FollowButt />
 				</div>
 			</Toolbar>
 		</Fragment>
