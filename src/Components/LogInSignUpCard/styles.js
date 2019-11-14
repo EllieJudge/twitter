@@ -21,7 +21,6 @@ const useStyles = makeStyles(() => ({
 		display: "flex",
 		flexDirection: "column",
 		alignItems: "center",
-		// height: "50%",
 		paddingBottom: "15px",
 		marginBottom: "10px"
 	}

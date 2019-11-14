@@ -9,8 +9,8 @@ export default function DenseAppBar() {
 
 	return (
 		<div className={classes.root}>
-			<AppBar position="fixed" style={{ backgroundColor: "white" }}>
-				<Toolbar variant="dense">
+			<AppBar className={classes.appBar}>
+				<Toolbar variant="dense" className={classes.toolbar}>
 					<div className={classes.leftSide}>
 						<Typography className={classes.tessssst}>
 							<Twitter className={classes.twitterIcon} />

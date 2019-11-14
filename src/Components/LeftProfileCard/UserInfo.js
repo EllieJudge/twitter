@@ -1,8 +1,10 @@
 import React from "react";
+import useStyles from "./styles";
 
 function UserInfo(props) {
+	const classes = useStyles();
 	return (
-		<div style={{ color: props.color, padding: "5px 5px 5px 5px", fontSize: "14px" }}>
+		<div className={classes.infoCont} style={{ color: props.color }}>
 			<div>
 				{props.icon}
 				{props.info}

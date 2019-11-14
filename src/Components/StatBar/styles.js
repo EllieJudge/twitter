@@ -23,13 +23,13 @@ const useStyles = makeStyles(() => ({
 		color: "#66757F",
 		display: "flex",
 		fontWeight: "bold",
-		marginLeft: -1,
+		marginLeft: -1
 	},
 	rightSide: {
-		width: '100%',
-    display: 'flex',
-    justifyContent: 'space-evenly',
-		marginLeft: 165,
+		width: "100%",
+		display: "flex",
+		justifyContent: "space-evenly",
+		marginLeft: 165
 	}
 }));
 

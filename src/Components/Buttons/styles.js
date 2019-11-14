@@ -2,18 +2,16 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles(() => ({
 	button: {
-    // maxWidth: 400,
-    width: "90px",
-		borderRadius: "100px",
+		width: 90,
+		borderRadius: 100,
 		boxShadow: "none",
 		cursor: "pointer",
-		fontSize: "13px",
+		fontSize: 13,
 		fontWeight: "bold",
 		lineHeight: "20px",
-		padding: "6px 16px",
 		position: "relative",
-    textAlign: "center",
-    margin: "10px 10px 0px 10px"
+		textAlign: "center",
+		margin: "10px 10px 0px 10px"
 	}
 }));
 

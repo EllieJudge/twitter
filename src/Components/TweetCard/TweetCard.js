@@ -1,11 +1,13 @@
 import React from "react";
 import Paper from "@material-ui/core/Paper";
 import useStyles from "./styles";
-import CheckCircleIcon from "@material-ui/icons/CheckCircle";
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import ModeCommentIcon from "@material-ui/icons/ModeComment";
-import RepeatIcon from "@material-ui/icons/Repeat";
-import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
+import {
+	CheckCircle,
+	ExpandMore,
+	ModeComment,
+	Repeat,
+	FavoriteBorder
+} from "@material-ui/icons";
 
 function TweetCard(props) {
 	const classes = useStyles();
@@ -19,70 +21,49 @@ function TweetCard(props) {
 		optionalImg,
 		comments,
 		retweets,
-		love
+		love,
+		suffix
 	} = props.user.user;
 	return (
 		<div>
-			<Paper style={{ backgroundColor: "pink", display: "flex", padding: 7 }}>
-				<img
-					src={avatar}
-					alt="userPic"
-					style={{ height: 48, width: 48, borderRadius: 50, padding: 5 }}
-				/>
+			<Paper className={classes.paper}>
+				<img src={avatar} alt="userPic" className={classes.avatar} />
 
 				<div className={classes.textCont}>
 					<div className={classes.userInfoCont}>
 						<div className={classes.authorInfo}>
 							<div className={classes.fullName}>{fullName}</div>
-							<CheckCircleIcon className={classes.blueTick} />
+							<CheckCircle className={classes.blueTick} />
 							<div className={classes.userName}>
 								{userName} * {date}
 							</div>
 						</div>
-						<ExpandMoreIcon className={classes.expandIcon} />
+						<ExpandMore className={classes.expandIcon} />
 					</div>
 					<div className={classes.tweet}>{tweet}</div>
 					<div>{optionalImg}</div>
 
 					<div className={classes.iconsCont}>
 						<div>
-							<ModeCommentIcon className={classes.icons} />
-							{comments}K
+							<ModeComment className={classes.icons} />
+							{comments}
+							{suffix}
 						</div>
 
 						<div>
-							<RepeatIcon className={classes.icons} />
-							{retweets}K
+							<Repeat className={classes.icons} />
+							{retweets}
+							{suffix}
 						</div>
 
 						<div>
-							<FavoriteBorderIcon className={classes.icons} />
-							{love}K
+							<FavoriteBorder className={classes.icons} />
+							{love}
+							{suffix}
 						</div>
 					</div>
 				</div>
 			</Paper>
-			{
-				//rowOne
-				//avatar
-				//fullName
-				//blueTick
-				//userName
-				//dateOfTweet
-				//arrowDownIcon
-				//rowTwo
-				//tweetText
-				//optionalImage
-				//rowThree
-				//dialogueIcon
-				//number //suffix
-				//retweetIcon
-				//number //suffix
-				//loveheartIcon
-				//number //suffix
-				//rowFour
-				//showThisThread
-			}
 		</div>
 	);
 }

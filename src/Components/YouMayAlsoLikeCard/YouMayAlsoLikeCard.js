@@ -6,20 +6,10 @@ import Paper from "@material-ui/core/Paper";
 function YouMayAlsoLikeCard() {
 	const classes = useStyles();
 	return (
-		<Paper className={classes.cardContainer}>
-			<header
-				style={{
-					padding: 5,
-					display: "flex",
-					alignItems: "center",
-					marginLeft: 7
-				}}
-			>
+		<Paper className={classes.paper}>
+			<header className={classes.header}>
 				<div className={classes.largeFont}>You may also like ·</div>
-				<div style={{ color: "hotpink", fontSize: 12, marginLeft: 5 }}>
-					{" "}
-					Refresh
-				</div>
+				<div className={classes.refresh}> Refresh</div>
 			</header>
 
 			<Suggestions

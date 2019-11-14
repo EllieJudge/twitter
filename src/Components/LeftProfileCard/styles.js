@@ -1,15 +1,16 @@
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles(theme => ({
-	// profileContainer: {
-	// 	backgroundColor: "#E2E6EB",
-	// 	display: "flex",
-	// 	flexDirection: "column",
-	//    width: "100%",
-	// },
+	container: {
+		marginLeft: 20,
+		marginRight: 5,
+		width: "31%",
+		display: "flex",
+		flexDirection: "column"
+	},
 	text: {
 		marginLeft: "28%",
-		marginTop: "10%"
+		marginTop: "8%"
 	},
 	name: {
 		fontSize: 23,
@@ -45,6 +46,10 @@ const useStyles = makeStyles(theme => ({
 		borderRadius: 3,
 		marginRight: 5,
 		marginBottom: 5
+	},
+	infoCont: {
+		padding: "5px 5px 5px 5px",
+		fontSize: "14px"
 	}
 }));
 

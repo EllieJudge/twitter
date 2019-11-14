@@ -1,39 +1,44 @@
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles(theme => ({
+	appBar: {
+		backgroundColor: "white",
+		position: "fixed"
+	},
 	root: {
-		fontSize: "13px",
+		fontSize: 13,
 		fontWeight: "bold"
-  },
-  inputBase: {
-    fontSize: "12px", 
-    color: "black" 
-  },
-  emptyDiv: {
-    width: "90px"
-  },
-  aTag: {
-    marginLeft: "19px",
-    color: "#66757F",
-    fontWeight: "lighter",
-    fontSize: "12px"
-  },
-  arrow: {
-    color: "#66757F", margin: "0" 
-  },
-  aTag2: {
-    marginLeft: "5px",
-    color: "#66757F",
-    marginRight: "0"
-  },
-  rightSide: {
-      width: "100%",
-      height: "30px",
-      display: "flex",
-      justifyContent: "flex-end",
-      alignItems: "center",
-      paddingRight: "60px" 
-  },
+	},
+	inputBase: {
+		fontSize: 12,
+		color: "black"
+	},
+	emptyDiv: {
+		width: 90
+	},
+	aTag: {
+		marginLeft: "19px",
+		color: "#66757F",
+		fontWeight: "lighter",
+		fontSize: "12px"
+	},
+	arrow: {
+		color: "#66757F",
+		margin: "0"
+	},
+	aTag2: {
+		marginLeft: "5px",
+		color: "#66757F",
+		marginRight: "0"
+	},
+	rightSide: {
+		width: "100%",
+		height: "30px",
+		display: "flex",
+		justifyContent: "flex-end",
+		alignItems: "center",
+		paddingRight: "60px"
+	},
 	leftSide: {
 		display: "flex",
 		marginLeft: "60px",

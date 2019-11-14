@@ -37,9 +37,8 @@ function StatBar() {
 
 						<Stat title="Lists" value={Math.floor(Math.random() * 100)} />
 					</div>
-	
-						<FollowBtn />
 
+					<FollowBtn />
 				</div>
 			</Toolbar>
 		</Fragment>

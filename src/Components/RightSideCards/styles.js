@@ -5,12 +5,11 @@ const useStyles = makeStyles(() => ({
 		display: "flex",
 		justifyContent: "start",
 		alignContent: "flex-start",
-		flexWrap:"wrap",
-		// flexDirection: "column",
+		flexWrap: "wrap",
 		width: "31%",
 		marginLeft: 5,
 		marginRight: 20,
-		backgroundColor: "inherit",
+		backgroundColor: "inherit"
 	}
 }));
 
